@@ -12,11 +12,11 @@ const Tasks = () => {
 
   return (
     <div className="mx-auto mt-16">
-      <div>
-        <h1>Tasks</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-xl font-bold">Tasks</h1>
         <AddTaskModal />
       </div>
-      <div className="space-y-5 mt-5">
+      <div className="space-y-5 mt-6">
         {tasks.map((task) => (
           <TaskCard task={task} key={task?.id} />
         ))}
