@@ -15,13 +15,26 @@ const initialState: InitialState = {
       title: "Provident quisquam ",
       description: "Aute voluptas proide",
       priority: "Low",
+      user: "Ta0ic31omrcWr5MXS4NmA",
+      dueDate: "2025-07-03T18:00:00.000Z",
+    },
+    {
+      id: "PWC1rhx-ET_Ansu9z20Yw",
+      isCompleted: false,
+      title: "Front End Development ",
+      description: "Aute voluptas proide",
+      priority: "Medium",
+      user: null,
       dueDate: "2025-07-03T18:00:00.000Z",
     },
   ],
   filters: "All",
 };
 
-type DraftTask = Pick<ITask, "title" | "description" | "dueDate" | "priority">;
+type DraftTask = Pick<
+  ITask,
+  "title" | "description" | "dueDate" | "priority" | "user"
+>;
 
 const createTask = (taskData: DraftTask): ITask => {
   return { id: nanoid(), isCompleted: false, ...taskData };
