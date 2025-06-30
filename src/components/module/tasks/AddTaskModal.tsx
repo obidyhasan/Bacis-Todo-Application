@@ -50,7 +50,7 @@ export function AddTaskModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="mt-5">Add Modal</Button>
+        <Button className="">Add Modal</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
